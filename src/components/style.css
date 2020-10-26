@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.nav-track {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.nav-bar {
+  width: 100%;
+}
+
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0;
+  text-align: right;
+}
+
+.nav-bar > ul > li {
+  list-style-type: none;
+}
