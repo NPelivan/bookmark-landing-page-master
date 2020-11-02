@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
   font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
 .nav-track {
@@ -9,7 +13,13 @@
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 3%;
+}
+
+.nav-track > img {
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-bar {
@@ -18,12 +28,77 @@
 
 .nav-wrapper {
   display: flex;
-  width: 100%;
+  align-items: center;
+  width: 40%;
   justify-content: space-evenly;
   padding: 0;
   text-align: right;
+  float: right;
+  height: 100%;
 }
 
-.nav-bar > ul > li {
+.nav-bar > .nav-wrapper > li {
   list-style-type: none;
+}
+
+.nav-wrapper > li > a {
+  text-decoration: none;
+  color: hsl(229, 31%, 21%);
+}
+
+.nav-wrapper > li > a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.nav-button {
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border: 0px;
+  padding: 1% 2% 1% 2%;
+  border-radius: 7%;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+  border: 1px solid hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+
+.mobile-nav-track {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .nav-track {
+    display: none;
+  }
+
+  .mobile-nav-track {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10%;
+    height: 100%;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    background-color: hsl(229, 31%, 21%, 0.95);
+    display: block;
+  }
+
+  .mobile-nav > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+  }
 }
