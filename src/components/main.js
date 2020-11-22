@@ -11,16 +11,21 @@ export default class Main extends Component {
   render() {
     return (
       <main>
-        <section>
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
-          <button>Get it on Chrome</button>
-          <button>Get it on Firefox</button>
-          <img src={HeroImage} alt="Monitor image" />
+        <section className="container-intro">
+          <div className="intro">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <button>Get it on Chrome</button>
+            <button className="firefox-btn">Get it on Firefox</button>
+          </div>
+          <div className="hero-image">
+            <img src={HeroImage} alt="Monitor image" />
+          </div>
+          <div className="blue-line"></div>
         </section>
 
         <section>

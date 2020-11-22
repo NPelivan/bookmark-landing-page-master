@@ -54,7 +54,7 @@ export default class Navbar extends Component {
                 <img src={Close} alt="Close button" onClick={this.clickNav} />
               </div>
               <BrowserRouter>
-                <nav>
+                <nav className="mobile-nav-bar">
                   <ul>
                     <hr />
                     <li>
@@ -75,7 +75,7 @@ export default class Navbar extends Component {
                 </nav>
               </BrowserRouter>
 
-              <button>Login</button>
+              <button className="nav-btn">LOGIN</button>
             </div>
           )}
         </div>
