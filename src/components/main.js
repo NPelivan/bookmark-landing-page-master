@@ -28,13 +28,15 @@ export default class Main extends Component {
           <div className="blue-line"></div>
         </section>
 
-        <section>
-          <h2>Features</h2>
-          <p>
-            Our aim is to make it quick and easy for you to access your
-            favourite websites. Your bookmarks sync between your devices so you
-            can access them on the go.
-          </p>
+        <section className="container-features">
+          <div className="features">
+            <h2>Features</h2>
+            <p>
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
 
           <span>Simple Bookmarking</span>
           <h2>Bookmark in one click</h2>
