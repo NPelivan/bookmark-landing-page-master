@@ -143,6 +143,22 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .nav-wrapper {
+    width: 50%;
+  }
+  .nav-wrapper > li {
+    padding-right: 10%;
+  }
+
+  .container-intro > .blue-line {
+    position: absolute;
+    top: 25%;
+    height: 240px;
+    width: 400px;
+  }
+}
+
 /* desktop intro */
 main {
   width: 80%;
@@ -214,11 +230,131 @@ main {
 }
 .blue-line {
   width: 500px;
-  height: 300px;
+  height: 330px;
   background-color: hsl(231, 69%, 60%);
   position: absolute;
-  top: 45%;
+  top: 40%;
   right: 0%;
   z-index: -1;
   border-radius: 130px 0 0 130px;
 }
+
+/* mobile intro */
+
+@media (max-width: 426px) {
+  .container-intro {
+    display: block;
+    height: 70vh;
+  }
+
+  .mobile-nav {
+    z-index: 9999;
+  }
+  .hero-image {
+    position: relative;
+    bottom: 629px;
+    width: 100%;
+    left: 0px;
+  }
+
+  .intro {
+    margin-top: 115%;
+    width: 100%;
+  }
+
+  .blue-line {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    top: 195px;
+  
+  }
+
+  .intro > h1 {
+   
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .intro > p {
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .intro > button {
+    width: 45%;
+    margin: 0;
+    padding: 4% 4% 4% 4%;
+    margin-top: 10%;
+
+  }
+
+  .intro > .firefox-btn {
+    margin-left: 5%;
+  }
+}
+
+
+
+@media (max-width: 376px) {
+  .hero-image {
+    position: relative;
+    bottom: 620px;
+  }
+  
+  .container-intro {
+    height: 70vh;
+  }
+  .blue-line {
+    position: absolute;
+    top: 160px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .intro > h1 {
+    font-size: 32px;
+  }
+
+  .intro > button {
+    font-size: 13px;
+   
+  }
+}
+
+@media (max-width: 321px) {
+  .hero-image {
+    position: relative;
+    bottom: 540px;
+  }
+  .blue-line {
+    width: 250px;
+    height: 150px;
+  }
+
+  .intro > h1 {
+    font-size: 27px;
+  }
+}
+
+/* features */
+
+.features {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.features > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5%;
+  
+}
+
+.features > p {
+  color: hsl(229, 8%, 60%);
+  line-height: 25px;
+}
+
