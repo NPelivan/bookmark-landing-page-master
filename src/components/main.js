@@ -6,7 +6,7 @@ import Opera from "./images/logo-opera.svg";
 import Dots from "./images/bg-dots.svg";
 import Arrow from "./images/icon-arrow.svg";
 import "./style.css";
-
+import Tabs from "./Tabs";
 export default class Main extends Component {
   render() {
     return (
@@ -37,31 +37,35 @@ export default class Main extends Component {
               you can access them on the go.
             </p>
           </div>
+          <Tabs>
+            <div label="Simple Bookmarking">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button>More info</button>
+            </div>
 
-          <span>Simple Bookmarking</span>
-          <h2>Bookmark in one click</h2>
-          <p>
-            Organize your bookmarks however you like. Our simple drag-and-drop
-            interface gives you complete control over how you manage your
-            favourite sites.
-          </p>
-          <button>More info</button>
+            <div label="Speedy Searching">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button>More info</button>
+            </div>
 
-          <span>Speedy Searching</span>
-          <h2>Intelligent search</h2>
-          <p>
-            Our powerful search feature will help you find saved sites in no
-            time at all. No need to trawl through all of your bookmarks.
-          </p>
-          <button>More info</button>
-
-          <span>Easy Sharing</span>
-          <h2>Share your bookmarks</h2>
-          <p>
-            Easily share your bookmarks and collections with others. Create a
-            shareable link that you can send at the click of a button.
-          </p>
-          <button>More info</button>
+            <div label="Easy Sharing">
+              <h2>Share your bookmarks</h2>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button>More info</button>
+            </div>
+          </Tabs>
         </section>
 
         <section>

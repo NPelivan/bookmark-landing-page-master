@@ -267,11 +267,9 @@ main {
     height: 200px;
     position: absolute;
     top: 195px;
-  
   }
 
   .intro > h1 {
-   
     font-size: 35px;
     text-align: center;
   }
@@ -286,7 +284,6 @@ main {
     margin: 0;
     padding: 4% 4% 4% 4%;
     margin-top: 10%;
-
   }
 
   .intro > .firefox-btn {
@@ -294,14 +291,12 @@ main {
   }
 }
 
-
-
 @media (max-width: 376px) {
   .hero-image {
     position: relative;
     bottom: 620px;
   }
-  
+
   .container-intro {
     height: 70vh;
   }
@@ -318,7 +313,6 @@ main {
 
   .intro > button {
     font-size: 13px;
-   
   }
 }
 
@@ -350,11 +344,29 @@ main {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 5%;
-  
 }
 
 .features > p {
   color: hsl(229, 8%, 60%);
   line-height: 25px;
+  margin-bottom: 15%;
 }
 
+.tab-list {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
