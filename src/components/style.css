@@ -354,7 +354,6 @@ main {
 
 .tab-list {
   text-align: center;
-  border-bottom: 1px solid #ccc;
   padding-left: 0;
 }
 
@@ -362,11 +361,82 @@ main {
   display: inline-block;
   list-style: none;
   margin-bottom: -1px;
-  padding: 0.5rem 0.75rem;
+  padding: 2% 4% 2% 4%;
+  cursor: pointer;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+.tab-list-item:hover {
+  color: hsl(0, 94%, 66%);
 }
 
 .tab-list-active {
   background-color: white;
-  border: solid #ccc;
-  border-width: 1px 1px 0 1px;
+  border-bottom: 3px solid hsl(0, 94%, 66%);
+}
+.tab-item {
+  display: flex;
+  margin-top: 7%;
+  justify-content: space-between;
+}
+.tab-item > img {
+  width: 40%;
+}
+
+.tab-item > div {
+  width: 50%;
+  align-self: center;
+}
+
+.tab-item > div > h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+.tab-item > div > p {
+  width: 80%;
+  margin-bottom: 5%;
+  color: hsl(229, 8%, 60%);
+}
+
+.tab-item > div > button {
+  padding: 2% 3% 2% 3%;
+  color: white;
+  background-color: hsl(231, 69%, 60%);
+  border: 0;
+  margin-right: 4%;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.left-blue-line {
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  top: 1200px;
+  left: 0%;
+  width: 580px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 0 130px 130px 0;
+}
+
+/* mobile features */
+
+@media (max-width: 426px) {
+  .features {
+    width: 100%;
+  }
+
+  .tab-list-item {
+    display: block;
+  }
+
+  .left-blue-line {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    top: 1400px;
+  }
 }
