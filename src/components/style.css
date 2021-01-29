@@ -262,11 +262,11 @@ main {
     width: 100%;
   }
 
-  .blue-line {
+  .container-intro > .blue-line {
     width: 325px;
-    height: 200px;
+    height: 190px;
     position: absolute;
-    top: 195px;
+    top: 199px;
   }
 
   .intro > h1 {
@@ -300,10 +300,10 @@ main {
   .container-intro {
     height: 70vh;
   }
-  .blue-line {
+  .container-intro > .blue-line {
     position: absolute;
-    top: 160px;
-    width: 280px;
+    top: 150px;
+    width: 260px;
     height: 180px;
   }
 
@@ -321,8 +321,10 @@ main {
     position: relative;
     bottom: 540px;
   }
-  .blue-line {
-    width: 250px;
+  .container-intro > .blue-line {
+    position: absolute;
+    top: 160px;
+    width: 240px;
     height: 150px;
   }
 
@@ -431,12 +433,68 @@ main {
 
   .tab-list-item {
     display: block;
+    padding: 5%;
+  }
+
+  .tab-item {
+    display: block;
+    margin-top: 25%;
+  }
+
+  .tab-item > img {
+    width: 100%;
+    margin-bottom: 20%;
+  }
+
+  .tab-item > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tab-item > div > p {
+    width: 100%;
+    margin-top: 8%;
+  }
+
+  .tab-item > div > button {
+    width: 40%;
+    padding-top: 4%;
+    padding-bottom: 4%;
   }
 
   .left-blue-line {
     width: 325px;
-    height: 200px;
+    height: 210px;
     position: absolute;
-    top: 1400px;
+    top: 1460px;
+  }
+}
+
+@media (max-width: 376px) {
+  .left-blue-line {
+    width: 290px;
+    height: 180px;
+    position: absolute;
+    top: 1380px;
+  }
+}
+
+@media (max-width: 321px) {
+  .left-blue-line {
+    width: 260px;
+    height: 170px;
+    position: absolute;
+    top: 1290px;
+  }
+}
+
+/* dekstop features */
+
+@media (max-width: 1025px) {
+  .left-blue-line {
+    width: 400px;
+    height: 210px;
+    position: absolute;
+    top: 920px;
   }
 }
