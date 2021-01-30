@@ -89,35 +89,37 @@ export default class Main extends Component {
           <div className="left-blue-line"></div>
         </section>
 
-        <section>
+        <section className="extensions">
           <h2>Download the extension</h2>
           <p>
             We’ve got more browsers in the pipeline. Please do let us know if
             you’ve got a favourite you’d like us to prioritize.
           </p>
 
-          <div>
-            <img src={Chrome} alt="Chorme" />
-            <h4>Add to Chrome</h4>
-            <span>Minimum version 62</span>
-            <img src={Dots} alt="Dots" />
-            <button>Add & Install Extension</button>
-          </div>
+          <div className="flex-items">
+            <div className="browser">
+              <img src={Chrome} alt="Chorme" />
+              <h4>Add to Chrome</h4>
+              <span>Minimum version 62</span>
+              <img src={Dots} alt="Dots" />
+              <button>Add & Install Extension</button>
+            </div>
 
-          <div>
-            <img src={Firefox} alt="Firefox" />
-            <h4>Add to Firefox</h4>
-            <span>Minimum version 55</span>
-            <img src={Dots} alt="Dots" />
-            <button>Add & Install Extension</button>
-          </div>
+            <div className="browser">
+              <img src={Firefox} alt="Firefox" />
+              <h4>Add to Firefox</h4>
+              <span>Minimum version 55</span>
+              <img src={Dots} alt="Dots" />
+              <button>Add & Install Extension</button>
+            </div>
 
-          <div>
-            <img src={Opera} alt="Opera" />
-            <h4>Add to Opera</h4>
-            <span>Minimum version 46</span>
-            <img src={Dots} alt="Dots" />
-            <button>Add & Install Extension</button>
+            <div className="browser">
+              <img src={Opera} alt="Opera" />
+              <h4>Add to Opera</h4>
+              <span>Minimum version 46</span>
+              <img src={Dots} alt="Dots" />
+              <button>Add & Install Extension</button>
+            </div>
           </div>
         </section>
 

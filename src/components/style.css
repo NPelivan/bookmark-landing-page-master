@@ -424,6 +424,17 @@ main {
   border-radius: 0 130px 130px 0;
 }
 
+/* dekstop features */
+
+@media (max-width: 1025px) {
+  .left-blue-line {
+    width: 400px;
+    height: 210px;
+    position: absolute;
+    top: 920px;
+  }
+}
+
 /* mobile features */
 
 @media (max-width: 426px) {
@@ -488,13 +499,36 @@ main {
   }
 }
 
-/* dekstop features */
+/* extensions */
 
-@media (max-width: 1025px) {
-  .left-blue-line {
-    width: 400px;
-    height: 210px;
-    position: absolute;
-    top: 920px;
-  }
+.extensions {
+  margin-top: 18%;
+}
+
+.extensions > h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+.extensions > p {
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  line-height: 25px;
+  margin-bottom: 10%;
+}
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+.browser {
+  box-shadow: 0px 10px 20px -5px rgb(73 93 207 / 20%);
+  width: 30%;
 }
