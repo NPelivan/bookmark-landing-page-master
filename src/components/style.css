@@ -597,3 +597,25 @@ main {
   background-color: white;
   border: 2px solid hsl(231, 69%, 60%);
 }
+
+/* extensions mobile  */
+
+@media (max-width: 426px) {
+  .extensions > h2 {
+    font-size: 29px;
+    margin-top: 40%;
+  }
+  .extensions > p {
+    width: 100%;
+    margin-top: 8%;
+  }
+
+  .flex-items {
+    display: block;
+    width: 100%;
+  }
+
+  .browser {
+    width: 100%;
+  }
+}
