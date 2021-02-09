@@ -10,6 +10,7 @@ import Tab2 from "./images/illustration-features-tab-2.svg";
 import Tab3 from "./images/illustration-features-tab-3.svg";
 import "./style.css";
 import Tabs from "./Tabs";
+import FAQs from "./FAQs";
 export default class Main extends Component {
   render() {
     return (
@@ -123,48 +124,14 @@ export default class Main extends Component {
           </div>
         </section>
 
-        <section>
+        <section className="faq-container">
           <h2>Frequently Asked Questions</h2>
           <p>
             Here are some of our FAQs. If you have any other questions you’d
             like answered please feel free to email us.
           </p>
 
-          <span>What is Bookmark?</span>
-          <img src={Arrow} alt="Arrow trigger" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
-            quis quam ornare mattis.
-          </p>
-
-          <span>How can I request a new browser?</span>
-          <img src={Arrow} alt="Arrow trigger" />
-          <p>
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-            aliquet convallis ultricies. Mauris augue massa, ultricies non
-            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-            imperdiet.
-          </p>
-
-          <span>Is there a mobile app?</span>
-          <img src={Arrow} alt="Arrow trigger" />
-          <p>
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
-            ex et ultricies bibendum.
-          </p>
-
-          <span>What about other Chromium browsers?</span>
-          <img src={Arrow} alt="Arrow trigger" />
-          <p>
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
-            pellentesque non ut velit.
-          </p>
+          <FAQs />
 
           <button>More info</button>
         </section>
