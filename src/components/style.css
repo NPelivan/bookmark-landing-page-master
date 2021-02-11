@@ -654,13 +654,10 @@ main {
 }
 
 .faqs .faq .faq-question {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background-image: url(./images/icon-arrow.svg);
-  background-position: right;
-  background-repeat: no-repeat;
-  margin-right: 5%;
-  transition: all 0.4s;
+  padding-right: 1.5rem;
+  position: relative;
+  line-height: 1.2;
+  margin: 1% 0;
 }
 
 .faqs .faq .faq-question:hover {
@@ -669,8 +666,8 @@ main {
 }
 
 .faqs .faq .faq-answer {
-  color: hsl(229, 8%, 60%);
-  line-height: 25px;
+  /* color: hsl(229, 8%, 60%);
+  line-height: 25px;*/
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
@@ -679,9 +676,30 @@ main {
 
 .faqs .faq.open .faq-question {
   margin-bottom: 15px;
+}
+
+.faqs .faq .faq-question::after {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 1.5rem;
+  display: block;
   background-image: url(./images/icon-arrow.svg);
-  background-position: right;
+  content: "";
+  top: 0;
+  background-size: 100%;
   background-repeat: no-repeat;
-  margin-right: 5%;
-  transform: translateY(-50%) rotate(180deg);
+  background-position: center;
+  transition: all 0.4s;
+  margin-right: 4%;
+}
+
+.open .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+  display: block;
 }
