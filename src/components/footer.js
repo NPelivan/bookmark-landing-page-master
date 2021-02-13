@@ -9,8 +9,19 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <span>More Info 35,000+ already joined</span>
-        <h1>Stay up-to-date with what we’re doing</h1>
+        <section className="contact">
+          <span>35,000+ already joined</span>
+          <h1>Stay up-to-date with what we’re doing</h1>
+
+          <form name="form" action="" method="POST" autocomplete="on">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email adress"
+            />
+            <button>Contact Us</button>
+          </form>
+        </section>
 
         <img src={Logo} alt="logo" />
 
