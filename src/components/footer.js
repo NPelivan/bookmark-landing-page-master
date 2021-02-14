@@ -86,9 +86,8 @@ export default class Footer extends Component {
               name="email"
               placeholder="Enter your email adress"
               id="email"
-              value={className={`error ${this.state.input.email}`}}
+              value={this.state.input.email}
               onChange={this.handleChange}
-              
             />
             <div className="error">{this.state.error.email}</div>
             <button>Contact Us</button>
