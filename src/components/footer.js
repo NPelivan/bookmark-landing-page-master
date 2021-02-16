@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import Logo from "./images/logo-bookmark.svg";
+import LogoWhite from "./images/logo-bookmark-white.svg";
 import Facebook from "./images/icon-facebook.svg";
 import Twitter from "./images/icon-twitter.svg";
 import "./style.css";
@@ -81,42 +82,50 @@ export default class Footer extends Component {
             autocomplete="on"
             onSubmit={this.handleSubmit}
           >
-            <input
-              type="text"
-              name="email"
-              placeholder="Enter your email adress"
-              id="email"
-              value={this.state.input.email}
-              onChange={this.handleChange}
-            />
-            <div className="error">{this.state.error.email}</div>
+            <div className="input-form">
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter your email adress"
+                id="email"
+                value={this.state.input.email}
+                onChange={this.handleChange}
+              />
+
+              <div className="error">{this.state.error.email}</div>
+            </div>
+
             <button>Contact Us</button>
           </form>
         </section>
 
-        <img src={Logo} alt="logo" />
+        <section className="footer-nav">
+          <div>
+            <img src={LogoWhite} alt="logo" />
 
-        <BrowserRouter>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">FEATURES</Link>
-              </li>
+            <BrowserRouter>
+              <nav className="f-nav">
+                <ul className="f-nav-wrapper">
+                  <li>
+                    <Link to="/">FEATURES</Link>
+                  </li>
 
-              <li>
-                <Link to="/">PRICING</Link>
-              </li>
+                  <li>
+                    <Link to="/">PRICING</Link>
+                  </li>
 
-              <li>
-                <Link to="/">CONTACT</Link>
-              </li>
-            </ul>
-          </nav>
-        </BrowserRouter>
-
-        <img src={Facebook} alt="Facebook" />
-        <img src={Twitter} alt="Twitter" />
-        <img />
+                  <li>
+                    <Link to="/">CONTACT</Link>
+                  </li>
+                </ul>
+              </nav>
+            </BrowserRouter>
+            <div className="social-media">
+              <img src={Facebook} alt="Facebook" />
+              <img src={Twitter} alt="Twitter" />
+            </div>
+          </div>
+        </section>
       </footer>
     );
   }

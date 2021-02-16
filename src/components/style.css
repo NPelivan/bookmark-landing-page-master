@@ -784,9 +784,175 @@ footer {
   font-weight: 500;
 }
 
-.contact > form > input {
-  padding: 0.8%;
+.input-form > input {
+  padding: 15px;
   border-radius: 5px;
   border: 0;
-  width: 20%;
+  width: 300px;
+}
+
+.contact > form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact > form > button {
+  height: 100%;
+  padding: 15px;
+  margin-left: 1%;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border: 2px solid hsl(0, 94%, 66%);
+}
+
+.contact > form > button:hover {
+  background-color: white;
+  border: 2px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+}
+
+.error {
+  display: block;
+  background-color: hsl(0, 94%, 66%);
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+  padding: 2%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footer-nav {
+  background-color: hsl(229, 31%, 21%);
+  margin-top: 3%;
+}
+
+.footer-nav > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+.f-nav {
+  width: 80%;
+}
+
+.f-nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  padding: 0;
+  text-align: left;
+  float: left;
+  height: 100%;
+  margin-left: 8%;
+}
+
+.social-media {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media > img:hover {
+  filter: invert(51%) sepia(26%) saturate(6764%) hue-rotate(330deg)
+    brightness(105%) contrast(98%);
+  cursor: pointer;
+}
+
+.f-nav-wrapper > li {
+  list-style-type: none;
+  margin-right: 8%;
+}
+
+.f-nav-wrapper > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.f-nav-wrapper > li > a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+/* mobile footer */
+
+@media (max-width: 426px) {
+  .contact {
+    width: 80%;
+    margin: 30% auto 0;
+    padding-top: 18%;
+  }
+  .contact > h1 {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 12%;
+  }
+
+  .contact > form {
+    display: block;
+    width: 100%;
+  }
+
+  .input-form {
+    margin-bottom: 5%;
+  }
+
+  .input-form > input {
+    width: 100%;
+  }
+
+  .contact > form > button {
+    width: 100%;
+    border: 0;
+    margin: 0;
+  }
+
+  .footer-nav {
+    margin-top: 10%;
+  }
+
+  .f-nav {
+    display: block;
+    width: 100%;
+  }
+  .footer-nav > div {
+    display: block;
+    padding-top: 10%;
+    height: 55vh;
+    text-align: center;
+  }
+
+  .f-nav {
+    height: 50%;
+    margin-top: 10%;
+  }
+
+  .f-nav-wrapper {
+    display: block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .f-nav-wrapper > li {
+    margin: 0;
+    margin-bottom: 8%;
+  }
+
+  .social-media {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    width: 30%;
+    margin: 7% auto;
+  }
 }
